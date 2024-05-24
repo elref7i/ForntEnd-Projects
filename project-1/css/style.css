@@ -1,0 +1,185 @@
+:root{
+    --just-bg:#19283f ;
+    --color-blue:#33d1cc;
+    --color-red:#ff3150;
+    --color-yellow:#ffc400;
+    --color-title:#7f7f7f;
+    --color-icon:#eff7fa;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    background-color: #19283f;
+    color: white;
+}
+.navbar-brand{
+    color: white ;
+}
+.navbar-brand:hover{
+    color: var(--color-blue);
+}
+.navbar-toggler> i{
+    color: white;
+}
+.navbar-toggler[aria-expanded="false"]{
+    border: 1px solid white;
+    box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"]{
+    border: 1px solid var(--color-blue);
+    box-shadow: none;
+}
+.nav-link{
+    color: white;
+} 
+.navbar .navbar-nav .nav-link.active, .navbar .navbar-nav .nav-link:focus, .navbar .navbar-nav .nav-link:hover {
+    color: var(--color-blue)
+}
+.search{
+    color: var(--color-blue);
+    border-left: 2px solid var(--color-blue)  ;
+} 
+.all_btn  button{
+
+    background-color: var(--color-red);
+}
+.all_btn  button a{
+    color: var(--color-yellow);
+}
+/* end navbar */
+header{
+    height:calc( 100vh - 72px);
+    background-color:#19283f ;
+}
+.title:after{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background-color: var(--color-blue);
+}
+.feat_icon{
+    height: 200px;
+}
+.feat_icon .number{
+    font-size: 200px;
+    color: var(--color-icon);
+    left: 50%;
+    transform: translateX(-60%);
+    z-index: -1;
+}
+.feat_icon .icon{
+    font-size: 70px;
+    color: var(--color-blue);
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end features */
+/* start make_this */
+.make_this, .team {
+    background-color: var(--color-icon);
+}
+.links_makethis{
+    gap: 15px;
+}
+.links_makethis ul{
+    list-style: none;
+    gap: 15px;
+    color: black;
+}
+.links_makethis ul a{
+    color: black;
+    font-weight: 500;
+}
+.links_makethis ul li a:hover{
+    color: var(--color-red);
+}
+.links_makethis  button{
+
+    background-color: var(--color-red);
+}
+.links_makethis  button a{
+    color: var(--color-yellow);
+}
+.aplication .box{
+    overflow: hidden;
+}
+.aplication .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - .50rem);
+    height: calc(100% - .50rem);
+    background-color: rgb(51, 209, 204,80%) ;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - .30rem));
+}
+.aplication .box:hover::before{
+    transform: translateX(0);
+}
+/* end make this */
+/* start stuff */
+.team .title_meet h1{
+    color: var(--color-yellow);
+}
+.content_team h2{
+    background-color: var(--color-blue);
+}
+.stuff{
+    flex: 1;
+}
+/* end stuff */
+/* start project */
+.project{
+    background-color: var(--just-bg);
+}
+/*start project */
+.subscribe{
+    background-color: var(--color-yellow);
+}
+.input_gm input[type="gmail"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.input_gm input:focus{
+    outline: none;
+}
+.input_gm input::placeholder{
+    color: white;
+}
+.btn_sub button{
+    background-color: var(--just-bg);
+}
+.btn_sub button a{
+    color: var(--color-yellow);
+}
+/* footer */
+footer{
+    background-color: var(--just-bg);
+}
+.grap{
+    color: var(--color-blue);
+}
+.bondi{
+    color: var(--color-yellow);
+}
+.bi-facebook{
+    color: #1877f2;
+}
+.bi-twitter{
+    color: #1da1f2;
+}
+.bi-linkedin{
+    color: #0077b5;
+}
+.bi-youtube{
+    color: #ff0000;
+}
+
