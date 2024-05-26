@@ -1,0 +1,341 @@
+:root{
+    --gray-color:gray;
+    --border-ccc: 1px solid #ccc;
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --color-head:#eeeeee;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue-color);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--blue-alt-color);
+}
+body{
+    font-family: "Open Sans" , sans-serif;
+    margin: 0;
+}
+.page{
+    /* height: 200vh; */
+    background-color: rgb(243, 248, 252);
+}
+*:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.Sidebar ul li{
+    transition: .3s;
+}
+.Sidebar ul li.active,
+.Sidebar ul li:hover{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+.Sidebar h3::before,
+.Sidebar h3::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+}
+.Sidebar h3::before{
+    width: 80px;
+    height: 1px;
+    bottom:-6px;
+}
+.Sidebar h3::after{
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    bottom:-11px;
+    outline: 4px solid white;
+}
+@media (max-width:767px){
+    .Sidebar h3::before,
+    .Sidebar h3::after{
+        display: none;
+    }
+}
+/*Start head  */
+.content{
+    overflow: hidden;
+}
+.head input{
+    width: 150px;
+    transition: .3s;
+    padding: 10px 10px 10px 30px;
+}
+.head input::placeholder{
+    font-size: 13px;
+    color:  var(--gray-color);
+}
+.head input:focus{
+    width: 180px;
+}
+.head input:focus::placeholder{
+    color: transparent;
+}
+.head .search::before{
+    font-family:var(--fa-style-family-classic);
+    content: "\f002";
+    font-weight: 900;
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    font-size: 14px;
+    transform: translateY(-50%);
+    color: #9c9c9c;
+
+}
+.notifications::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 12px;
+    background-color: red;
+    left: 21%;
+    top: 1px;
+}
+.page h1{
+    padding: 20px 20px 40px 20px;
+    font-size: 30px;
+}
+.page h1::before{
+    content: '';
+    position: absolute;
+    width: 117px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 52px;
+    bottom: 34px;
+}
+.page h1::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 52px;
+    bottom: 34px;
+    left: 20px;
+    overflow: 2;
+}
+.Wrapper{
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.head-welcome{
+    background-color: var(--color-head);
+}
+.head-welcome img{
+    width: 200px;
+}
+.Welcome .avatar{
+    left: 14px;
+    position: relative;
+    top: -25px;
+    padding: 3px;
+    background-color: white;
+    border-radius: 30px;
+}
+.Welcome a{
+    background-color: #0075ff;
+    margin: 15px 10px 10px auto;
+    border-radius: 5px;
+    right: 0 ;
+}
+.Quick-Draft textarea{
+    resize: none;
+    min-height: 180px;
+}
+.Quick-Draft input::placeholder{
+    font-size: 13px;
+    color:  var(--gray-color);
+}
+.Save{
+    background-color: #0075ff;
+    margin: 15px 10px 0px auto;
+    border-radius: 5px;
+    right: 0 ;
+    border: none;
+}
+
+
+
+@media (max-width:767px)
+{
+    .Wrapper{
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+
+}
+.info-target .icon{
+    width: 80px;
+    height: 80px;
+}
+.range{
+    height: 4px;
+}
+.right-target .range> span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.right-target .range > span span{
+    position: absolute;
+    bottom:  16px;
+    right: -16px ;
+    padding: 2px;
+    border-radius: 5px;
+}
+.right-target .range > span span::before{
+    content: '';
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.right-target .range > .blue span::before{
+    border-color: var(--blue-color) transparent transparent transparent;
+}
+.right-target .range > .orange span::before{
+    border-color: orange transparent transparent transparent;
+}
+.right-target .range > .green span::before{
+    border-color: rgb(13, 167, 36) transparent transparent transparent;
+}
+/*End head  */
+.box-ticket{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    padding: 20px;
+    gap: 20px;
+}
+.con-ticket{
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.info-ticket .true{
+    color: green;
+}
+.info-ticket .false{
+    color: red;
+}
+.info-ticket .loding{
+    color: var(--blue-alt-color);
+}
+.info-ticket .artical{
+    color: orange;
+}
+/**/
+.left-news img{
+    width: 100px;
+    border-radius: 10px;
+}
+.right-news p{
+    border-radius: 5px;
+    background-color: #e8e8e8;
+    width: fit-content;
+    font-weight: normal;
+}
+.content-search h4{
+    font-weight: normal;
+}
+.Uploads .left-news img{
+    width: 40px;
+}
+
+/* Last-Project */
+.Last-Project ul::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: var(--blue-alt-color);
+    left: 11px;
+}
+.Last-Project ul li::before{
+    content: '';
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white ;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+.Last-Project ul .done::before{
+    background-color: #0075ff;
+}
+.Last-Project ul .current::before{
+    animation: flashing .8s infinite alternate;
+}
+@keyframes flashing{
+    from{
+        background-color: var(--blue-color);
+    }
+    to{
+        background-color: white;
+    }
+}
+/*  */
+.Reminders ul li::before{
+    content: '';
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color:var(--blue-color);
+    margin-right: 15px;
+}
+.Reminders ul .li-green::before{
+    background-color: greenyellow;
+}
+.Reminders ul .li-orange::before{
+    background-color: orange;
+}
+.Reminders ul .li-red::before{
+    background-color: red;
+}
+.Reminders ul li .info-blue{
+    border-left: 2.2px solid var(--blue-color);
+
+}
+.Reminders ul li .info-green{
+    border-left: 2.2px solid greenyellow ;
+}
+.Reminders ul li .info-orange{
+    border-left: 2.2px solid orange;
+}
+.Reminders ul li .info-red{
+    border-left: 2.2px solid red;
+}
