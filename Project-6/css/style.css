@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+header,nav{
+    background-color: #121519;
+}
+.content-imag{
+    position: relative;
+    overflow: hidden;
+    background-color: #448c74;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    align-self: end;
+    /* display: flex; */
+}
+.Refai{
+    /* z-index: 8; */
+    width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.nav-link, .navbar-brand{
+    color: white;
+}
+.fa-rocket{
+    color: #448c74;
+}
+.nav-link:hover{
+    color: #448c74;
+}
+.cneter-header .head{
+    font-weight: 400;
+    font-size: 70px;
+}
+.cneter-header .head section{
+    font-weight: bold;
+}
+.cneter-header p{
+    font-size: 13px;
+}
+.circle-egg
+{
+    width: 42px;
+    height: 69px;
+    border-radius: 6rem;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+    position: relative;
+}
+.circle-egg::after{
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 70px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6rem;
+    top:-1px;
+    animation:  light 2.5s infinite;
+    /* transform: translateY(-50%); */
+}
+.landing{
+    animation:  light 2.5s infinite;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+.circle-eggs,.circle-eggs2, .circle-eggs3, .circle-eggs4{
+    background-color: rgb(203, 207, 208 ,3%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.circle-eggs{
+    width: 300px;
+    height: 300px;
+    left: 0;
+    top: 0;
+}
+.circle-eggs2{
+    width: 200px;
+    height: 200px;
+    right: 0;
+    bottom: 10px;
+}
+.circle-eggs3{
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    top:50%;
+
+}
+.circle-eggs4{
+    width: 150px;
+    height: 150px;
+    left: 40%;
+    top: 5px;
+
+}
+
+.box-project{
+    width: 100%;
+    transition: .2s;
+}
+.box-project:hover{
+    transform: translateY(-15px);
+}
+.img-project{
+    width: 100%;
+    height: 300px;
+}
+.doot-icon{
+    background: #707070;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.project h4{
+    font-weight: 500;
+}
+
+.dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation: doot 2.5s infinite;
+}
+@keyframes light{
+    70%, 0%{
+        opacity: 1;
+    }
+    70%{
+    opacity: 0;
+    }
+}
+@keyframes doot{
+    70%, 50% {
+        transform: translateY(40px);
+    }
+    70%{
+        opacity: 0;
+    }
+    /* 40%, 60%{
+        transform: translateY(-10px);
+    } */
+}

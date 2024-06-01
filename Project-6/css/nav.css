@@ -1,0 +1,91 @@
+:root{
+    --first-color:#0e0b2b;
+    --color-button:#008aff;
+    --text-white-50:  rgba(255,255,255,.5);
+    --text-black-50: rgba(0,0,0,.5);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* height: 1000vh; */
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    color: #777;
+
+
+}
+nav, header{
+    background-color: white;
+    color: white;
+}
+.nav-link{
+    color: var(--text-black-50);
+}
+.nav-link:hover{
+    color: rgb(6, 6, 6);
+}
+.sign-in button{
+    border: none;
+}
+nav .menu {
+    position: absolute;
+    z-index:-1;
+    background-color:white;
+    color: var(--text-black-50);
+    padding: 20px 50px 5px 20px;
+    left: 50%;
+    top: 65px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    opacity:0;
+    transition: .5s;
+}
+nav .menu .content-box {
+    width: 300px;
+}
+.hover-menu:hover > .menu{
+    opacity: 1;
+    z-index: 100;
+    top: 50px;
+}
+nav .menu .links-menu a{
+    color: var(--text-black-50);
+}
+nav .menu .links-menu a:hover{
+    color: #2299f8;
+}
+/* nav .menu .side-menu h6{
+    color: var(--color-button);
+} */
+.menu .link-landing{
+    color: var(--color-button);
+    text-decoration: underline;
+}
+.menu .link-landing:hover{
+    text-decoration: none;
+    color: #45a8ff;
+}
+.menu p{
+    color: var(--text-black-50);
+    margin-bottom: 5px;
+}
+.menu a h6{
+    color: var(--first-color);
+}
+.menu a:hover h6{
+    color:var(--color-button);
+}
