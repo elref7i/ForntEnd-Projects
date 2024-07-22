@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+p{
+    color: #969291;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+/* !Start Header Styles */
+.header{
+    background-image: url("/images/drew-coffman-1872.jpg");
+    height: 100vh;
+    width: 100vw;
+}
+/* *Start Navbar Styles */
+.navbar{
+    padding-top: 20px;
+}
+.navbar img{
+    width: 150px;
+    float: left;
+}
+.navbar ul{
+    list-style: none;
+    float: right;
+}
+.navbar ul li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:500;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: #8d7757;
+}
+.navbar > .nav-clr{
+    clear: both;
+}
+/* *End Navbar Styles */
+
+/* *Start Home center Styles */
+
+.home{
+    vertical-align: middle;
+    width: fit-content;
+    margin: 200px auto;
+}
+.home h3,.home p,.home h1{
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 20px;
+    color: white;
+}
+.home h1{
+    font-size: 60px;
+}
+.btns{
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+.btns > button{
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.btns > .learn{
+    background-color:#8d7757;
+    border: none;
+}
+.btns > .contact{
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 0;
+}
+.home .btns > button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* *End Home center Styles */
+
+/* !Start Header Styles */
+
+/* ^Start who-we-are */
+.who-we-are{
+    padding: 60px 0px;
+}
+.who-we-are .content{
+    width: 49%;
+    display: inline-block;
+}
+.who-we-are .content img{
+    width:100% ;
+}
+.who-we-are .content h2, .who-we-are .content p{
+    padding: 20px 0px;
+}
+.who-we-are .content .box-icon{
+    width: 80%;
+    padding: 5px;
+}
+.who-we-are .right-content{
+    vertical-align: top;
+    padding: 20px 0px 60px 40px;
+}
+.who-we-are .content .box-icon .icon{
+    width: 10%;
+    display: inline-block;
+}
+.who-we-are .content .box-icon .icon img{
+    width: 80%;
+    border-radius: 50%;
+    border: 1px solid #8d7757;
+    vertical-align: middle;
+
+}
+.who-we-are .content .box-icon h3{
+    width: fit-content;
+    display: inline-block;
+    margin-top: 0;
+}
+/*  ^End who-we-are */
+
+/* ~Start Location */
+.our-location{
+    padding: 60px 0px;
+    background-color: rgb(237, 237, 237);
+}
+.location img{
+    width: 50%;
+    display: inline-block;
+}
+.left-content{
+    display: inline-block;
+    width: 49%;
+    padding-right: 40px;
+    padding-top: 40px;
+    vertical-align:top;
+}
+.left-content h2{
+    padding-bottom: 20px;
+}
+.left-content p{
+    padding-bottom: 20px;
+
+}
+/* ~End Location */
+
+/* &Start Our Bakig */
+.Our-Baking{
+    padding: 60px 0px;
+
+}
+.Our-Baking  .title{
+    width: 60%;
+    margin: auto;
+}
+.Our-Baking  .title h2 , .Our-Baking  .title p{
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.all-card{
+    padding-top: 50px;
+}
+.card{
+    width: 33%;
+    float: left;
+    padding: 10px;
+}
+.card > .caption {
+    padding-top: 20px;
+
+}
+.card .caption > h3{
+    width: fit-content;
+    margin: auto;
+}
+.card img{
+    width: 100%;
+}
+.card-clr{
+    clear: left;
+}
+/* &End Our Bakig */
+
+/*  !Start Contact Information */
+.contact-info{
+    padding: 60px 0px;
+    background-color: rgb(237, 237, 237);
+}
+.info{
+    width: 50%;
+    float: left;
+    padding-right: 40px;
+}
+.map{
+    width: 50%;
+}
+.away-contact .all-con > .box{
+    width: 100%;
+    padding:15px 0px 10px 0px ;
+}
+.icon-contact{
+    width:9%;
+    float: left;
+    background-color: #8d7757;
+    border-radius: 50%;
+
+}
+.icon-contact img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+.away-contact .all-con > .box > h4{
+    padding-left: 70px;
+}
+
+.clr-contact , .map-clr{
+    clear: left;
+}
+/*  !End Contact Information */
+/* ~ Start Footer */
+.footer{
+    padding: 60px 0px;
+    background-color:#403d38;
+}
+.footer .about{
+    width: 25%;
+    float: left;
+    padding: 0px 10px;
+}
+.footer .about h3{
+    color: white;
+    padding-bottom: 20px;
+}
+.about ul{
+    padding-left: 0;
+}
+    
+.about ul li {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    list-style: none;
+    border-bottom: 1px solid #969291;
+    /* background-color: aqua; */
+}
+.about ul li h4{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+}
+.about > ul > .last{
+    border: none;
+}
+.footer .about ul li, .footer .about ul li a , .footer .about p{
+    color: #969291;
+    text-decoration: none;
+
+}
+.footer .about ul li a:hover{
+    color: white;
+}
+.about-icon{
+    width: 30px;
+    float: left;
+}
+.clr-floot , .clr-phone{
+    clear: left;
+}
+.arrow{
+    width: 20px;
+    vertical-align: text-bottom;
+}
+/* ~ End Footer */
+
+/* !Start LOGO Bakery */
+.End{
+    background-color: #353330;
+}
+.Finish{
+    width: 40%;
+    margin: auto;
+    padding-top: 30px;
+}
+.Finish > img{
+    width: 400px;
+    margin-left : 100px;
+}
+.Finish .social {
+    width: fit-content;
+    margin: auto;
+    padding: 40px;
+}
+.Finish .social img{
+    width: 60px;
+    padding: 3px;
+    margin-left: 10px;
+    background-color: #403d38;
+    border-radius: 50%;
+    color: aliceblue;
+}
+.Finish h4{
+    width:fit-content ;
+    margin: auto;
+    padding-top: 20px;
+    color: #8c8a86;
+}
+
+.Finish ul{
+    list-style: none;
+}
+/* !End LOGO Bakery */
