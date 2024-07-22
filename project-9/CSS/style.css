@@ -58,6 +58,7 @@ h5{
 p{
     color: #000a;
 }
+
 /* *======>End Globle Styles */
 
 /* ^Start Header Styles */
@@ -251,7 +252,7 @@ p{
 .about-person > ul > li > a{
     color: #0008;
 }
-.about-person > .btns > .btn{
+.btn{
     padding: 10px 25px;
     border: none;
     border-radius: 5px;
@@ -262,6 +263,9 @@ p{
 }
 .btns > .btn > i{
     margin-left: 5px;
+}
+.btn:hover{
+    background-color: #ec2403;
 }
 /* *End Right Section */
 
@@ -308,32 +312,23 @@ p{
     background-color: #fff0;
     transition: background-color 500ms;
 }
-.service-only > .icon{
-    width: 100%;
-    height: 50px;
-    margin-bottom: 30px;
-    position: relative;
-}
-.service-only > .icon > i{
-    font-size: 30px;
+.service-only > i{
+    font-size: 25px;
     color: #ff305b;
-    position: absolute; 
-    top: 7px;
-    left:43%;
-    padding: 5px;
-    transition:font-size 500ms ;
-} 
+    margin-bottom: 15px;
+    transition: scale 500ms;
+}
+.service-only:hover i{
+    transition: scale .6s;
+    scale: 1.2;
+}
 .service-only:hover{
     transition: background-color .6s;
     background-color: white;
 }
-.service-only:hover i{
-    transition:font-size .3s ;
-    font-size: 35px;
-}
 /* ~End Services Styles */
 /* *Start Our Portfolio */
-.our-portfolio , .feedback{
+.our-portfolio , .feedback, .contact-us{
     padding:60px 0px ;
 }
 .links-items ul{
@@ -370,7 +365,7 @@ p{
 }
 .Products > .prod > .overlay > img{
     width: 100%;
-    display: block;i
+    display: block;
 }
 .Products .prod .overlay::before{
     content: "";
@@ -499,9 +494,10 @@ p{
     position: relative;
     
 }
-.card img,.card iframe{
+.card img{
     width: 100%;
     overflow: hidden;
+    display: block;
 }
 .card .caption{
     padding: 15px 10px;
@@ -516,6 +512,11 @@ p{
     color: #000;
     text-transform: uppercase;
     transition: color 500ms;
+    font-size: 15px;
+}
+.card a i{
+    margin-left: 5px;
+    font-size: 15px;
 }
 .card a:hover{
     transition: color .4s;
@@ -523,3 +524,62 @@ p{
 }
 
 /* ~End Blog */
+/* *Start Conatct us */
+.register{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+form{
+    width:70%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.name-gmail{
+    width: 40%;
+    flex: 1;
+}
+.subject{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+.design{
+    padding: 10px;
+    outline: none
+}
+.design:focus{
+    border: 1px solid #ff305b;
+}
+.register .btn{
+    text-transform: uppercase;
+    justify-self: start;
+}
+/* *End Conatct us */
+/* !Start Footer */
+footer{
+    padding: 60px 0px;
+    background-color: #333;
+}
+.icon-footer{
+    display: flex;
+    justify-content: center;
+}
+.icon-footer i{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.icon-footer i:hover{
+    color: #ff305b;
+}
+footer > .End{
+    color: #fff;
+    text-align: center;
+}
+footer > .End > span{
+    color: #ff305b;
+}
+/* !End Footer */
