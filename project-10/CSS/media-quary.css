@@ -1,0 +1,66 @@
+@media screen and (min-width:660px){
+    .container{
+        padding: 60px;
+    }
+}
+@media screen and (min-width:768px){
+    /* *about section */
+    .content-about .image-content img{
+        width: 80%;
+    }
+    /* *about section */
+    /* ~Project section */
+    .projects .all-box{
+        display: flex;
+        align-items: center;
+        flex-wrap:wrap;
+    }
+    .projects .box{
+        width: 50%;
+    }
+    /* ~Project section */
+}
+@media screen and (min-width:1024px){
+     /* *about section */
+    .content-about{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .content-about .image-content{
+        width: 40%;
+    }
+    .content-about .image-caption{
+        width: 50%;
+    }
+    .content-about .image-content img{
+        width: 100%;
+    }
+    .address{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .address li{
+        width: 50%;
+    }
+    /* *about section */ 
+    
+    /* ~Project section */
+    .projects .box{
+        width: 25%;
+    }
+    /* ~Project section */
+    /* &Skills Section */
+    .all-skills{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .skill{
+        width: 50%;
+        padding-right: 20px;
+    }
+    /* &Skills Section */
+}
+@media screen and (min-width:1200px){
+
+}

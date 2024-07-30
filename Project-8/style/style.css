@@ -237,10 +237,14 @@ p{
     padding: 60px 0px;
     background-color:#403d38;
 }
+.footer .container{
+    background-color: aqua;
+    display: flow-root;
+}
 .footer .about{
-    width: 25%;
-    float: left;
-    padding: 0px 10px;
+    width: 22%;
+    float: left;/
+    padding : 0px 40px;
 }
 .footer .about h3{
     color: white;
@@ -276,9 +280,6 @@ p{
 .about-icon{
     width: 30px;
     float: left;
-}
-.clr-floot , .clr-phone{
-    clear: left;
 }
 .arrow{
     width: 20px;

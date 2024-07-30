@@ -1,0 +1,78 @@
+:root{
+    
+}
+@media screen and (min-width: 640px) {
+    .container{
+        max-width: 80%;
+        margin: auto;
+    }
+    .header{
+        .container{
+            .content-header{
+                .links{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    /* ~Medai quary Header */
+}
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 75%;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container{
+        max-width: 87%;
+        margin: auto;
+    }
+    .header{
+        text-align: start;
+        .container{
+            padding: 30px 0px;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: var(--value-gap);
+            .image-brand{
+                width: calc((40%) - var(--value-gap)  / 2);
+            }
+            .content-header{
+                width: calc(40% - var(--value-gap)  / 2);
+                .links{
+                    margin:0;
+                    padding: 20px 0px;
+                    .book-table{
+                        border-top-left-radius: 0px;
+                    }
+                }
+                }
+                
+        }
+    }
+    /* ~Medai quary Header */
+}
+@media screen and (min-width: 1240px) {
+    .navbar{
+        .container{
+            .links{
+                display: block;
+            }
+            >.icons{
+                .mode-groub{
+                    gap: 0px;
+                }
+                .fa-bars{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+    /* ^Navbar */
+}
+@media screen and (min-width: 1536px) {}
