@@ -1,6 +1,3 @@
-:root{
-    
-}
 @media screen and (min-width: 640px) {
     .container{
         max-width: 80%;
@@ -16,33 +13,83 @@
         }
     }
     /* ~Medai quary Header */
+    .center-footer form{
+        flex-direction: row;
+    }
+    .center-footer form input{
+        flex: 1;
+    }
+    /* *FOOter */
 }
 @media screen and (min-width: 768px) {
     .container{
-        max-width: 75%;
-        margin: auto;
+        max-width: 90%;
     }
+    /* *Container  */
+    .all-cards{
+        display: flex;
+        flex-wrap:wrap;
+        gap: var(--gap-flex);
+    }
+    .all-cards .card{
+        width: calc((100% - var(--gap-flex))/2);
+    }
+    /* & ====.>Chefs Styles */
+    .all-image-gallery{
+        columns: 2;
+    }
+       /*! Gallery Styles  */
+    .all-contact-us{
+        display: flex;
+        flex-wrap: wrap;
+        gap:var(--gap-flex)
+    }
+    .contact-us{
+        width: calc((100% - var(--gap-flex))/2);
+        margin-bottom: 0;
+    }
+       /* *Contact Us */
+    footer > .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-flex);
+    }
+    .left-footer, .right-footer{
+        width: calc((100% - var(--gap-flex))/2);
+    }
+    .left-footer{
+        order: -2;
+    }
+    .right-footer{
+        order: -1;
+    }
+    .center-footer form{
+        flex-direction: row;
+    }
+    .center-footer form input{
+        flex: 1;
+    }
+       /* *Footer */
 }
 @media screen and (min-width: 1024px) {
     .container{
         max-width: 87%;
         margin: auto;
     }
+    /* ^Medai quary Navbar */
     .header{
         text-align: start;
         .container{
-            padding: 30px 0px;
             display: flex;
             flex-direction: row-reverse;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            gap: var(--value-gap);
             .image-brand{
-                width: calc((40%) - var(--value-gap)  / 2);
+                width: 40%;
             }
             .content-header{
-                width: calc(40% - var(--value-gap)  / 2);
+                width: 40%;
                 .links{
                     margin:0;
                     padding: 20px 0px;
@@ -55,12 +102,73 @@
         }
     }
     /* ~Medai quary Header */
+    .all-cards .card{
+        width: calc((100% - 2*var(--gap-flex))/3);
+    }
+    /* & ====.>Chefs Styles */
+    .all-image-gallery{
+        column-count: 3;
+    }
+    .name-gmail{
+        display: flex;
+        flex-direction: row;
+    }
+    .name-gmail > input{
+        flex-grow:1 ;
+    }
+       /*! Gallery Styles  */
+    .left-footer, .right-footer,.center-footer{
+        width: calc((100% - var(--gap-flex))/3);
+        order: 0;
+    }
+    .left-footer,.center-footer{
+        flex: 2;
+    }
+    .center-footer{
+        flex: 4;
+    }
+        /* *Footer */
 }
 @media screen and (min-width: 1240px) {
     .navbar{
         .container{
             .links{
-                display: block;
+                display: none;
+            }
+            .link-desktop{
+                display: flex;
+                gap: 20px;
+                font-weight: 600;
+                font-size: 16px;
+                margin: 0;
+                padding-left: 0;
+                text-transform: capitalize;
+                li{
+                    position: relative;
+                    a{
+                        color: var(--color-gray);
+                    }
+                    &:hover a{
+                        color: var(--color-black);
+                        transition: color .4s;
+                    }
+                    .active{
+                        color: var(--color-black);
+                    }
+                    &::after{
+                        content: "";
+                        width: 0%;
+                        height: 2.5px;
+                        position: absolute;
+                        background-color:var(--primary-color) ;
+                        bottom: -5px;
+                        left: 0;
+                        transition: width .6s;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                    }
+                }
             }
             >.icons{
                 .mode-groub{
@@ -73,6 +181,8 @@
         }
         
     }
-    /* ^Navbar */
+    /* ^Medai quary Navbar */
+    
 }
 @media screen and (min-width: 1536px) {}
+

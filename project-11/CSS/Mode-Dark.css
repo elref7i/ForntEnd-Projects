@@ -1,0 +1,128 @@
+:root{
+    --primary-color:#ce1212;
+    --color-white:#fff;
+    --color-black:#000;
+    --background-section:#eee;
+    --color-gray : #7f7f90;
+    /*  *COLORS */
+    --open-sans:"Open Sans", sans-serif;
+    --amtic-sc:"Amatic SC", sans-serif;
+    /*  *GOOGLE FONTS */
+    --padding-section :40px;
+    /*  */
+    --value-gap : 60px;
+    --black-1:#171717;
+    --black-2:#252525;
+    --black-3:#202020;
+    --primary-mode : #c17e1f;
+}
+
+body:has(:checked) ::selection {
+    background: var(--primary-mode);
+    color: var(--color-black);
+}
+
+body:has(:checked) #only{
+    color: #c17e1f;
+}
+/* !Span mode Dark */
+body:has(:checked) .navbar{
+    background-color: var(--black-1);
+}
+/* *Color White */
+body:has(:checked) #active,
+body:has(:checked) .icon-mode,
+body:has(:checked) a,
+body:has(:checked)  .title > p,
+body:has(:checked) h3,
+body:has(:checked) .contact-data p,
+body:has(:checked) .contact-data a,
+body:has(:checked) .contact-data p > span,
+body:has(:checked) #link-desktop li:hover a,
+body:has(:checked) .header{
+    color: var(--color-white);
+}
+/* *Color White */
+
+body:has(:checked) #link-desktop li::after,
+body:has(:checked) .contact-icon,
+body:has(:checked) .center-footer button{
+    background-color: var(--primary-mode);
+}
+/* ^Mode Moon NavBar */
+
+body:has(:checked) #book-table {
+    color: var(--color-black);
+    background-color: var(--primary-mode);
+}
+body:has(:checked) #icon{
+    background-image:  linear-gradient(to right ,var(--primary-mode) , var(--primary-mode) 50% , transparent 50%);;
+}
+body:has(:checked) #icon::before{
+    background-color: #000;
+}
+/* ~Header */
+body:has(:checked)  #title-span{
+    color: var(--primary-mode);
+}
+
+/* *Black-3 */
+
+body:has(:checked) .chefs,
+body:has(:checked)  .contact{
+    background-color: var(--black-3);
+}
+
+/* *Black-3 */
+
+/* *Black-1 */
+
+body:has(:checked) .card,
+body:has(:checked)  .contact-us,
+body:has(:checked) .input-data{
+    background-color: var(--black-1);
+}
+
+/* *Black-1 */
+body:has(:checked) .image-chefs::before{
+    background-image: url("/images/team-shape-dark.svg");
+}
+/* &Chefs */
+body:has(:checked)  .Gallery,
+body:has(:checked) .header{
+    background-color: var(--black-2);
+}
+/* !Gallery */
+body:has(:checked) .contact-data h3{
+    color: var(--color-7d);
+}
+
+body:has(:checked) .contact-icon i{
+    color: var(--color-black);
+}
+/* *border color */
+
+body:has(:checked) input:focus,
+body:has(:checked) textarea:focus{
+    border-color: var(--primary-mode);
+}
+/* *border color */
+body:has(:checked) .btn-send button{
+    background-color: var(--primary-mode);
+    color: var(--black-1);
+}
+body:has(:checked) .right-footer i{
+    color: var(--primary-mode);
+}
+body:has(:checked)  #watch-video:hover {
+    transition: color ease-in-out .4s;
+    color: var(--primary-mode);
+}
+body:has(:checked)  #book-table:hover,
+body:has(:checked) [type="submit"]:hover
+{
+    transition: background-color ease-in-out .4s;
+    background-color: var(--color-dark-hover);
+}
+
+/* *Contact */
