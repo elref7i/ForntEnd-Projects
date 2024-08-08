@@ -3,6 +3,8 @@
     --background-image: #292f37;
     --gray: #5f6164b0;
     --section-color : #f5fafe;
+    --margin-value:20px;
+    --gap-flex: 20px;
 }
 *{
     box-sizing: border-box;
@@ -34,13 +36,17 @@ p{
     margin: 0;
 }
 .container{
-    padding: 20px;
+    padding: 15px;
 }
 .title{
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 .title > h2{    
+    font-size:2rem;
     padding-bottom: 30px;
+}
+.title > P{    
+    font-size: 1rem;
 }
 
 /* *Start Header  */
@@ -52,26 +58,19 @@ p{
     display: flex;
     align-items: center;
 }
-.header::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #0004;
-    position: absolute;
-    z-index: 0;
-}
+
 .header > .container{
     flex: 1;
     z-index: 1;
 }
-.container > h2{
-    font-size: 32px;
+.header  h2{
+    font-size: 2rem;
     color: #fff;
     margin-top: 0;
     margin-bottom: 10px;
 }
-.container > p{
-    font-size: 20px;
+.header  p{
+    font-size: 1.25rem;
     color: #fff;
     margin: 0;
 }
@@ -148,11 +147,12 @@ p{
     padding: 20px 0px;
 }
 .image-profile {
-    width: 100px;
-    height: 100px;
-    padding: 5px;
+    width: 120px;
+    height: 120px;
+    padding: 8px;
     background-color: var(--background-image);
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 .image-profile > img{
     width: 100%;
@@ -162,18 +162,17 @@ p{
 .head-sidebar > h1{
     font-weight: bold;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 .icon-social{
     display: flex;
     gap: 10px;
-    margin: 0;
-
 }
 .icon-social li {
     background-color: var(--background-image);
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -188,14 +187,14 @@ p{
 
 /* ^Links Side Bar */
 .links{
-    padding-left: 30px;
-    padding-top: 20px;
+    padding: 20px 0px 0px 10px;
 }
 .links li{
     margin-bottom: 40px;
+    padding: 5px;
 }
 .links a{
-    font-size: 18px;
+    font-size: 1rem;
     color: #fff;
 }
 .links i {
@@ -208,42 +207,35 @@ p{
 /* *End Side Bar Styles */
 /* !!!!! */
 .about, .projects, .skills {
-    padding: 60px 0px;
+    padding-top: 40px ;
 }
 /* !!!!!! */
 
 /* *Start About Styles */
-.content-about .image-content{
-    padding-bottom: 20px;
-}
-.content-about .image-content img{
+.image-content img{
     width: 100%;
     display: block;
+
 }
-.content-about .image-caption h3{
-    font-size: 24px;
-    padding-bottom: 20px;
+.image-caption{
+    margin-top: var(--margin-value);
 }
-.content-about .image-caption p{
-    padding-bottom: 20px;
+.image-caption h3,
+.image-caption p{
+    margin-bottom: var(--margin-value);
+}
+.image-caption h3{
+    font-size: 1.5rem;
 }
 .address{
-    padding: 20px 0px;
+    padding-bottom: 20px;
 }
-.address li {
+.address li{
     display: flex;
     align-items: center;
-    column-gap: 8px;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: var(--margin-value);
 }
-
-.address h4{
-    font-size: 16px;
-}
-.address span{
-    font-size: 16px;
-}
-
 /* *End About Styles */
 
 /* *Start Projects styles */

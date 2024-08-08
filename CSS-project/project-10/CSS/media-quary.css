@@ -1,14 +1,23 @@
 @media screen and (min-width:660px){
     .container{
-        padding: 60px;
+        padding: 40px;
     }
 }
 @media screen and (min-width:768px){
-    /* *about section */
-    .content-about .image-content img{
-        width: 80%;
+    .container{
+        padding: 80px;
     }
-    /* *about section */
+    .container > h2{
+        font-size: 4rem;
+    }
+    .container > p{
+        font-size: 1.5rem;
+    }
+    .image-content{
+        width: 70%;
+    }
+    /* *HEADER Section */
+    
     /* ~Project section */
     .projects .all-box{
         display: flex;
@@ -21,29 +30,32 @@
     /* ~Project section */
 }
 @media screen and (min-width:1024px){
-     /* *about section */
+    .image-caption{
+        margin-top:0;
+    }
     .content-about{
         display: flex;
-        justify-content: space-between;
-        
+        /* flex-wrap: wrap; */
+        gap: var(--gap-flex);
     }
-    .content-about .image-content{
-        width: 40%;
+    .image-caption, .image-content{
+        width: 60%;
     }
-    .content-about .image-caption{
-        width: 50%;
-    }
-    .content-about .image-content img{
-        width: 100%;
+    .image-content{
+        width: 30%;
     }
     .address{
         display: flex;
         flex-wrap: wrap;
+        gap: var(--gap-flex);
     }
     .address li{
-        width: 50%;
+        width:calc((100% - var(--gap-flex)) / 2);
     }
-    /* *about section */ 
+    .image-content img{
+        width: 100%;
+    }
+    /* *about */
     
     /* ~Project section */
     .projects .box{
@@ -62,5 +74,17 @@
     /* &Skills Section */
 }
 @media screen and (min-width:1200px){
-
+    .container{
+        padding: 5px;
+    }
+    .icon{
+        display: none;
+    }
+    .side-bar{
+        left: 0;
+    }
+    .home{
+        width: calc(100% - 300px);
+        margin-left:auto ;
+    }
 }

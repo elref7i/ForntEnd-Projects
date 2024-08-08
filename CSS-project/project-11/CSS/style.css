@@ -392,19 +392,36 @@ p{
 .Gallery{
     background-color: var(--background-section);
 }
+.all-image-gallery{
+    display: flex;
+    flex-direction: column;
+}
 .image-gallery{
     padding: 5px;
     margin-bottom: 20px;
     background-color: var(--color-white);
     position: relative;
     overflow: hidden;
-    isolation: isolate;
 }
 .image-gallery img{
     width: 100%;
     display: block;
 }
-
+.Pizza{
+    order: -6;
+}
+.Burger{
+    order: -5;
+}
+.Levitation{
+    order: -4;
+}
+.Frittata{
+    order: -3;
+}
+.Beef{
+    order: -2;
+}
 
 .meal-name{
     position: absolute;

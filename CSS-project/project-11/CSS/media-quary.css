@@ -36,6 +36,7 @@
     }
     /* & ====.>Chefs Styles */
     .all-image-gallery{
+        display: block;
         columns: 2;
     }
        /*! Gallery Styles  */
@@ -107,6 +108,7 @@
     }
     /* & ====.>Chefs Styles */
     .all-image-gallery{
+        display: block;
         column-count: 3;
     }
     .name-gmail{
