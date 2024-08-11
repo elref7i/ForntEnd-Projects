@@ -1,0 +1,145 @@
+@media screen and (min-width:760px) {
+    .grid-project{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:  auto 1fr auto auto 1fr 1fr auto auto auto ;
+    }
+    .learn{
+        grid-area: 1/1/2/3;
+    }
+    /* *learn */
+    .ipone{
+        grid-area: 2/1/3/3;
+    }
+    .ipone .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .landing{
+        width: calc((70% - var(--gap-flex)) / 2);
+    }
+    .keyboard{
+        grid-area:3/1/4/2;
+    }
+    .ourpasion{
+        grid-area: 3/2/4/3;
+    }
+    .content h3{    
+        max-width: 250px;
+    }
+    /* *ipone */
+    .imac{
+        grid-area: 4/1/5/3;
+        padding:60px 0px 0px 0px ;
+    }
+    .imac .container{
+        display: flex;
+        gap: var(--gap-flex);
+        align-items: center;
+    }
+    .left-mac {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-mac img{
+        width: 120%;
+        height: 100%;
+        position: relative;
+        right: 45%;
+    }
+    .right-mac p{
+        line-height: 2;
+        max-width: 300px;
+    }
+    .landing{
+        width: calc((100% - var(--gap-flex))/2);
+    }
+    .twitter{
+        grid-area: 5/1/6/2;
+        display: flex;
+        align-items: center;
+    }
+    .labtop{
+        grid-area: 6/1/7/2;
+    }
+    .icloud{
+        grid-area: 5/2/7/3;
+        
+    }
+    .muchbetter{
+        grid-area: 7/1/8/3;
+    }
+    .vision{
+        grid-area: 8/1/9/3;
+        padding: 0;
+    }
+    .vision .container{
+        flex-direction: row;
+    }
+    .vision h3{
+        max-width: 160px;
+        text-align: start;
+    }
+    .muchbetter h3{
+        max-width: 100%;
+    }
+
+    /* imac */
+}
+@media screen and (min-width:1024px) {
+    .grid-project{
+        height:1300px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:repeat(4,1fr);
+    }
+    .learn{
+        grid-area: 1/3/2/5;
+        place-items: end center;
+    }
+    .ipone{
+        grid-area: 1/1/2/3;
+    }
+    .keyboard{
+        grid-area:2/1/3/2;
+    } 
+    .ourpasion{
+        grid-area: 3/1/4/2;
+    }
+    .imac{
+        grid-area:2/2/3/4;
+    }
+    .icloud{
+        grid-area: 2 / 4 / 4/ 5;
+    }
+    .labtop{
+        
+        grid-area: 3 / 2 / 4/ 4;
+    }
+    .twitter{
+        
+        grid-area: 4 / 1 / 5/ 2;
+    }
+    .muchbetter{
+        grid-area: 4 / 2 / 5/ 3;
+    }
+    .vision{
+        
+        grid-area: 4 / 3 / 5/ 5;
+    }
+    .left-mac img{
+        width: 150%;
+        height: 100%;
+        position: relative;
+        right: 50%;
+    }
+    .lab .top{
+        width: 70%;
+        right: -30px;
+        bottom: 20px;
+    }
+    .lab .ux{
+        top: -30px;
+    }
+
+}
