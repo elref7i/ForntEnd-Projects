@@ -18,6 +18,8 @@
   <!-- Style Sheet -->
   <link rel="stylesheet" href="/CSS/style.css">
   <!-- *Style CSS -->
+  <link rel="stylesheet" href="/CSS/media_quary.css">
+  <!-- *Style media-quary -->
 
 
 </head>
@@ -25,19 +27,26 @@
 <body>
   <header class="primary-header">
     <a href="#"><img src="/images/logo.svg" alt="Manage"></a>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <img class="icon-hamburger" src="/images/icon-hamburger.svg" alt="Icon Hamburger" aria-hidden="true" />
+      <img class="icon-close" src="/images/icon-close.svg" alt="Icon Close" aria-hidden="true" />
+      <span class="visually-hidden">Menu</span>
+    </button>
     <nav class="primary-navigation">
-      <ul role='link' class="nav-list">
+      <ul aria-label="primary" role='list' class="nav-list" id="primary-navigation">
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#product">Product</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#careers">Careers</a></li>
         <li><a href="#community">Community</a></li>
       </ul>
-      <button class="btn">Get Started</button>
     </nav>
+    <button class="btn">Get Started</button>
+
   </header>
+
   <main>
-    <section>
+    <section class="padding-b-900">
       <div class="container">
         <div class="even-columns">
           <div>
@@ -48,12 +57,12 @@
             <button class="btn">Get Started</button>
           </div>
           <div>
-            <img src="/images/illustration-intro.svg" alt="">
+            <img src="/images/illustration-intro.svg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section class="padding-b-900">
       <div class="container">
         <div class="even-columns">
           <div>
@@ -87,34 +96,84 @@
         </div>
       </div>
     </section>
-    <section class="carousel">
+    <section class="carousel | padding-b-700">
       <h2 class="fw-bold fs-secondary-heading">What they’ve said</h2>
       <!--!carousel  -->
       <button class="btn">Get Started</button>
     </section>
-    <section class="cta | bg-accent-400 text-neutral-100">
+    <section class="cta | bg-accent-400 text-neutral-100 padding-b-700">
       <div class="container">
         <div class="even-columns">
-          <p class="fw-bold fs-secondary-heading">Simplify how your team works today.
-            Get Started</p>
-          <button>Get Started</button>
+          <div>
+            <p class="fw-bold fs-secondary-heading">Simplify how your team works today.
+              Get Started</p>
+          </div>
+          <div>
+            <button class="btn" data-type="inverted">Get Started</button>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <footer>
+    <div class="container">
+      <div class="even-columns">
+        <div>
+          <a href=""><img src="/images/logo.svg" alt="Manage"></a>
+          <ul role="list" aria-label="social links">
+            <li>
+              <a aria-label="facebook" href="#">
+                <i class="fa-brands fa-facebook fa"></i>
+              </a>
+            </li>
+            <li>
+              <a aria-label="youtube" href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a aria-label="twitter" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a aria-label="instgram" href="#">
+                <i class="fa-brands fa-instgram"></i>
+              </a>
+            </li>
+            <li>
+              <a aria-label="github" href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <nav class="footer-nav">
+            <ul role="list" aria-label="Footer">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <form action="">
+            <input type="email" placeholder="Updates in your inbox…" required />
+            <button class="btn">Go</button>
+            <p>Copyright 2020. All Rights Reserved</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- 
 
-
-
-  01
-
-
-  02
-
-  03
-
-
-  What they’ve said
 
   Anisha Li
   “Manage has supercharged our team’s workflow. The ability to maintain
@@ -138,18 +197,12 @@
   Simplify how your team works today.
   Get Started
 
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
+ 
   in
   Updates in your inbox…
   Go
 
-  Copyright 2020. All Rights Reserved -->
+  Copyright 2020. All Rights Reserved-->
 
 
   <!-- <div class="attribution">

@@ -1,4 +1,4 @@
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 50em) {
     :root{
 
     --fs-body: var(--fs-500);
@@ -6,5 +6,8 @@
     --fs-secondary-heading:var(--fs-800);
     --fs-nav:var(--fs-300);
     }
-    
+    .even-columns{
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
