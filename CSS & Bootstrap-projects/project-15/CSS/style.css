@@ -1,0 +1,202 @@
+:root{
+  --color-white:#fff;
+
+  --color-black:#282727;
+
+  --color-gray-100:#1e1e1e;
+  --color-gray-400 :#4e4e4e;
+
+  --color-blue-100 : #0078ff;
+  --color-blue-400 : #cde1f8;
+
+
+  --overlay-color :#0077ffbe;
+
+  --font-first-heading:3rem;
+
+  --f-weight : 900px;
+
+  --transition-duration: .3s ;
+}
+html{
+  scroll-behavior: smooth;
+  /* scroll-padding-block: 64px; */
+}
+a{
+  cursor: pointer;
+}
+.gray-100{
+  color: var(--color-gray-100);
+}
+.gray-400{
+  color: var(--color-gray-400);
+}
+.blue-100{
+  background-color: var(--color-blue-100);
+}
+.blue-400{
+  background-color: var(--color-blue-400);
+}
+.c-blue-100{
+  color: var(--color-blue-100);
+}
+.c-blue-400{
+  color: var(--color-blue-400);
+}
+.w-fit{
+  width: fit-content;
+}
+.f-weight{
+  font-size: var(--f-Weigh);
+}
+/* ! ================> Utilites  */
+
+.title h2:after{
+  content:"";
+  position: absolute;
+  left: 0;
+  background-color: var(--color-blue-100);
+  width: 70%;
+  height: 3.5px;
+  bottom: -5px;
+}
+.title-two p:after{
+  content:"";
+  position: absolute;
+  left: 0;
+  background-color: var(--color-blue-100);
+  width: 40px;
+  height: 5px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* *===============> Tilte Sections */
+nav{
+  background-color: #00000091;
+}
+.navbar-toggler{
+  color: #fff;
+}
+.navbar-toggler:focus{
+  box-shadow: 0 0 0 0px;
+}
+.navbar-nav .nav-item{
+  position: relative;
+}
+.navbar-nav .nav-item::after{
+  content: "";
+  position: absolute;
+  width:0%;
+  height: 2px;
+  background-color: var(--color-white);
+  left: 8px;
+  overflow: hidden;
+  transition: width var(--transition-duration);
+}
+.navbar-nav .nav-item:hover::after{
+  width: 70%;
+}
+
+/* ~ >=============> NavBar */
+.header{
+  min-height: 100vh;
+  background-image: linear-gradient(#00000089,
+  #00000077), url('/images/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ? >=============> Header */
+.range-skill{
+  height: 12px;
+}
+.image-about{
+  width: 40%;
+}
+.progress{
+  height: 12px;
+  border-radius: 0;
+}
+/* & >=============> About  */
+.card-services{
+  border-radius: 15px;
+}
+.card-services .icon{
+  width:115px;
+  height: 115px;
+  border:10px solid  var(--color-blue-100);
+  transition: border var(--transition-duration) , background-color var(--transition-duration) , color var(--transition-duration);
+}
+.card-services:hover .icon{
+  border:10px solid  var(--color-blue-400);
+  background-color: var(--color-blue-100);
+}
+.card-services:hover .bi{
+  color: #fff;
+}
+/* ^ >=============> Services  */
+.works{
+  background-image: linear-gradient(to top , var(--overlay-color) , var(--overlay-color)) , url("/images/counters-bg.jpg");
+  background-position: top;
+  background-attachment: fixed;
+}
+.icon-works{
+  width:80px;
+  height: 80px;
+  border:10px solid  var(--color-blue-400);
+  transition: border var(--transition-duration) , background-color var(--transition-duration) , color var(--transition-duration);
+}
+/* * >=============> Works  */
+.protfolio .card-text{
+  font-size: .7875rem;
+}
+.scale-image img{
+  transition: scale var(--transition-duration);
+}
+.scale-image:hover img{
+  scale: 1.1;
+}
+/* todo >=============> Protfolio  */
+.arcu{
+  background-image: linear-gradient(to top , var(--overlay-color) , var(--overlay-color)) , url("/images/overlay-bg.jpg");
+  background-position: top;
+  background-attachment: fixed;
+  
+}
+/* * >=============> Arcu  */
+.image-blog-two{
+  width: 50px;
+  height: 50px;
+
+}
+.hint-image-blog{
+  text-wrap: nowrap;
+  bottom: -20px;
+}
+/* ~ >=============> blog  */
+.contact{
+  background-image: linear-gradient(to top , var(--overlay-color) , var(--overlay-color)) , url("/images/overlay-bg.jpg");
+  background-position: top;
+  background-attachment: fixed;
+}
+.icon-social{
+  width: 42px;
+  max-width: 42px;
+  height: 42px;
+  border: 2.5px solid var(--color-blue-100);
+  transition: border var(--transition-duration) , background-color var(--transition-duration) , color var(--transition-duration);
+}
+.icon-social:hover {
+  border-color:  var(--color-blue-400);
+  background-color: var(--color-blue-100);
+}
+.icon-social:hover .bi{
+  color: #fff;
+}
+.Send-Message {
+  text-wrap: nowrap;
+}
+/* ~ >=============> Contact */
