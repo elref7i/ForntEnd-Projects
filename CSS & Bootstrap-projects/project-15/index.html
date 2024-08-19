@@ -5,22 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!-- *Font google -->
   <link rel="stylesheet" href="/CSS/all.min.css">
   <!-- *Font Awesome -->
   <link rel="stylesheet" href="/CSS/bootstrap.min.css">
   <!-- *Bootstrap -->
   <link rel="stylesheet" href="/CSS/style.css">
   <!-- *Style CSS -->
+  <link rel="stylesheet" href="/CSS/media-quary.css">
+  <!-- *Style   Media-quary -->
 
 </head>
 
-<body>
-  <nav class="navbar | navbar-expand-lg  fixed-top  py-2 bg-black ">
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
+  <nav class="navbar | navbar-expand-lg  fixed-top  py-3 bg-black ">
     <div class="container">
-      <a class="navbar-brand | text-white  " href="#">DevFolio</a>
+      <a class="navbar-brand | text-white fw-bold fs-3 " href="#">DevFolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
           viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
@@ -29,19 +36,22 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav | ms-auto mb-3 mb-lg-0 text-uppercase">
           <li class="nav-item | me-3">
-            <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-white fw-bold" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item | me-3">
-            <a class="nav-link text-white" href="#">Services</a>
+            <a class="nav-link text-white fw-bold" href="#about">about</a>
           </li>
-          <li>
-            <a class="nav-link text-white" href="#">Work</a>
+          <li class="nav-item | me-3">
+            <a class="nav-link text-white fw-bold" href="#services">Services</a>
           </li>
           <li class="nav-item | me-3 ">
-            <a class="nav-link text-white " href="#">Blog</a>
+            <a class="nav-link text-white fw-bold" href="#work">Work</a>
           </li>
-          <li class="nav-item | me-3  dropdown ">
-            <a class="nav-link dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown"
+          <li class="nav-item | me-3 ">
+            <a class="nav-link text-white fw-bold" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item | me-3  dropdown">
+            <a class="nav-link dropdown-toggle text-white fw-bold" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Drop down
             </a>
@@ -57,23 +67,27 @@
               <li><a class="dropdown-item" href="#">Drop down 4</a></li>
             </ul>
           </li>
-          <li class="nav-item | me-3">
-            <a class="nav-link text-white " href="#">contact</a>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-bold" href="#contact">contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- ~ >=============> NavBar -->
-  <div class="header | text-white d-flex align-items-center justify-content-center text-center">
+  <div class="header | text-white d-flex align-items-center justify-content-center text-center" id="home">
     <div class="container">
       <h1 class="display-2 fw-bold mb-4">I am Morgan Freeman</h1>
-      <span class="display-5 fw-normal fs-3">Desinger </span>
-      <!--  Developer FreeLancer Photographer -->
+      <p class="job-person | text-center">
+        <span class="desinger">Desinger</span> <!--8-->
+        <span class="developer">Developer</span><!--9-->
+        <span class="freeLancer">FreeLancer</span><!--10-->
+        <span class="Photographer">Photographer</span><!--12-->
+      </p>
     </div>
   </div>
   <!-- ? >=============> header -->
-  <div class="about | py-5">
+  <div class="about | py-5" id="about">
     <div class="container">
       <div
         class="all-about | row  justify-content-between  row-cols-1 row-cols-md-2 gx-0 gx-md-5   shadow-lg  py-5 px-3 ">
@@ -160,7 +174,7 @@
     </div>
   </div>
   <!-- & >=============> About -->
-  <div class="services py-5">
+  <div class="services py-5" id="services">
     <div class="container">
       <div class="title-two | text-center mb-5">
         <h2 class="display-5 fw-bold text-uppercase">Services</h2>
@@ -336,7 +350,7 @@
     </div>
   </div>
   <!-- * >=============> Works -->
-  <div class="protfolio py-5">
+  <div class="protfolio py-5" id="work">
     <div class="container">
       <div class="title-two | text-center mb-5">
         <h2 class="display-5 fw-bold text-uppercase">Portfolio</h2>
@@ -509,12 +523,46 @@
     </div>
   </div>
   <!-- todo >=============> protfolio -->
-  <!-- <div class="arcu py-5">
+  <div class="arcu py-5">
     <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner |  py-5 text-center">
+          <div class="carousel-item active | py-5 ">
+            <div class="image-arcu rounded-circle overflow-hidden mb-4 m-auto ">
+              <img src="/images/testimonial-2.jpg" class="w-100" alt="xavi alonso">
+            </div>
+            <div class="cpation-arcu">
+              <h3 class="text-uppercase text-white h4">Xavi Alonso</h3>
+              <p class="text-white">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item  | py-5 ">
+            <div class="image-arcu rounded-circle overflow-hidden mb-4 m-auto">
+              <img src="/images/testimonial-4.jpg" class="w-100" alt="xavi alonso">
+            </div>
+            <div class="cpation-arcu">
+              <h3 class="text-uppercase text-white h4">mayrta scorate</h3>
+              <p class="text-white">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div> -->
+  </div>
   <!-- * >=============> Arcu -->
-  <div class="blog py-5">
+  <div class="blog py-5" id="blog">
     <div class="container">
       <div class="title-two | text-center mb-5">
         <h2 class="display-5 fw-bold text-uppercase">Blog</h2>
@@ -618,7 +666,7 @@
     </div>
   </div>
   <!-- ~ >=============> Blog -->
-  <div class="contact py-5">
+  <div class="contact py-5" id="contact">
     <div class="container">
       <div class="content-contact | row row-cols-1 row-cols-md-2 bg-white py-5  px-5">
         <div class="left-contact | mb-5 mb-md-0">
@@ -631,7 +679,7 @@
             <input class="border border-1 ps-2 py-2" type="email" placeholder="Your Email">
             <input class="border border-1 ps-2 py-2" type="text" placeholder="Subject">
             <textarea class="mb-4 border border-1 ps-2 py-2" name="Message" id="" placeholder="Message"></textarea>
-            <button class="Send-Message | btn btn-primary rounded-pill fs-5 py-2 px-3 w-fit align-self-center ">Send
+            <button class="Send-Message | btn btn-primary btn-lg rounded-pill fs-5  align-self-center ">Send
               Message</button>
           </form>
 
@@ -668,8 +716,8 @@
                 </svg></span> contact@example.com</p>
           </div>
           <ul class="socila-media d-flex align-items-center flex-wrap gap-3 ps-0">
-            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center  ">
-              <a class="mb-3 text-dark" href="#">
+            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center pb-2  ">
+              <a class="text-dark" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                   class="bi bi-facebook" viewBox="0 0 16 16">
                   <path
@@ -677,8 +725,8 @@
                 </svg>
               </a>
             </li>
-            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center  ">
-              <a class="mb-3 text-dark" href="#">
+            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center pb-2  ">
+              <a class="text-dark" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                   class="bi bi-instagram" viewBox="0 0 16 16">
                   <path
@@ -686,8 +734,8 @@
                 </svg>
               </a>
             </li>
-            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center  ">
-              <a class="mb-3 text-dark" href="#">
+            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center pb-2 ">
+              <a class="text-dark" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter"
                   viewBox="0 0 16 16">
                   <path
@@ -695,8 +743,8 @@
                 </svg>
               </a>
             </li>
-            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center  ">
-              <a class="mb-3 text-dark" href="#">
+            <li class="icon-social rounded-circle d-flex align-items-center justify-content-center pb-2 ">
+              <a class="text-dark" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
                   class="bi bi-linkedin" viewBox="0 0 16 16">
                   <path

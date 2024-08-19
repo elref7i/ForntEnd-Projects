@@ -1,0 +1,8 @@
+@media screen and (min-width:768px) {
+    :root{
+        --width-letter : 21.9925px;
+    }
+    .job-person span{
+        font-size: 2.5rem;
+    }
+}
