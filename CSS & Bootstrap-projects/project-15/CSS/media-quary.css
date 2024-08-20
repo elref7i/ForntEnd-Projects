@@ -5,4 +5,56 @@
     .job-person span{
         font-size: 2.5rem;
     }
+
+    /* ? >=============> header  */
+
+}
+@media screen and (min-width:992px) {
+    .navbarDropdown:hover .dropdown-menu-nav{
+        display: block;
+    }
+    .navbar-nav .nav-item::after{
+        content: "";
+        position: absolute;
+        width:0%;
+        height: 2px;
+        background-color: var(--color-white);
+        left: 8px;
+        bottom: 0px;
+        overflow: hidden;
+        transition: width var(--transition-duration);
+    }
+    .navbar-nav .nav-item:hover::after{
+        width: 70%;
+        transition: width var(--transition-duration);
+    }
+    .navbar-nav .active::after{
+        content: "";
+        position: absolute;
+        width:70%;
+        height: 2px;
+        background-color: var(--color-white);
+        left: 8px;
+        bottom: 0px;
+        overflow: hidden;
+        animation: active .5s  ;
+        /* transition: width var(--transition-duration); */
+        
+    }
+    .navbar-nav .active{
+        color: var(--color-white);
+    }
+    .dropend:hover .dropdown-menu-deep{
+        display: block;
+        right:-160px;
+        top: 0;
+    }
+    @keyframes active {
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 70%;
+        }
+    }
 }

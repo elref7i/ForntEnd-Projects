@@ -23,6 +23,7 @@
 html{
   scroll-padding-block: 75.74px;
 }
+
 a{
   cursor: pointer;
 }
@@ -72,6 +73,21 @@ a{
   left: 50%;
   transform: translateX(-50%);
 }
+.icon-home{
+  width:40px;
+  height:40px;
+  background-color: var(--color-blue-100);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity .4s;
+}
+body:has(.link-home > .active) .icon-home{
+  opacity: 0;
+}
+/* *Icon home */
 
 /* *===============> Tilte Sections */
 nav{
@@ -86,20 +102,18 @@ nav{
 .navbar-nav .nav-item{
   position: relative;
 }
+.navbar-nav .nav-link{
+  color: var(--color-white);
+}
+.navbar-nav .active{
+  color: var(--color-blue-100);
+}
+.dropend button{
+  border: 0;
+  background-color: transparent;
+}
 
-.navbar-nav .nav-item::after{
-  content: "";
-  position: absolute;
-  width:0%;
-  height: 2px;
-  background-color: var(--color-white);
-  left: 8px;
-  overflow: hidden;
-  transition: width var(--transition-duration);
-}
-.navbar-nav .nav-item:hover::after{
-  width: 70%;
-}
+
 
 /* ~ >=============> NavBar */
 .header{
@@ -129,23 +143,22 @@ nav{
   right: 0px;
   top: 50%;
   transform: translateY(-50%);
-  animation : opacit 8s infinite;
+  animation : opacit 16S infinite ;
 
 }
 .desinger{
-  animation: desinger 8s infinite ;
+  animation: desinger 16S infinite  steps(9);
 }
 .developer{
-  animation: developer 8s infinite ;
+  animation: developer 16S infinite  steps(10) ;
   
 }
 .freeLancer{
-  
-  animation: freeLancer 8s infinite ;
+  animation: freeLancer 16S infinite steps(11) ;
 }
 .Photographer{
   
-  animation: Photographer 8s infinite ;
+  animation: Photographer 16S infinite steps(13) ;
 }
 
 @keyframes desinger {
@@ -185,7 +198,7 @@ nav{
   }
 }
 @keyframes opacit{
-  0%, 50%, 75%, 100%, 12.5%, 37.5%, 62.5%, 87.5%{
+  12.5%, 37.5%, 62.5%, 87.5%{
     opacity: 1;
   }
 
@@ -201,7 +214,7 @@ nav{
   height: 12px;
 }
 .image-about{
-  width: 40%;
+  width:50%;
 }
 .progress{
   height: 12px;
@@ -304,3 +317,4 @@ nav{
 
 }
 /* ~ >=============> Contact */
+
