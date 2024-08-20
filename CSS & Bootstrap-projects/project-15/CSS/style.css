@@ -5,6 +5,7 @@
 
   --color-gray-100:#1e1e1e;
   --color-gray-400 :#4e4e4e;
+  --color-gray-600 :#c6c6c6;
 
   --color-blue-100 : #0078ff;
   --color-blue-400 : #cde1f8;
@@ -73,6 +74,8 @@ a{
   left: 50%;
   transform: translateX(-50%);
 }
+/* *===============> Tilte Sections */
+
 .icon-home{
   width:40px;
   height:40px;
@@ -89,7 +92,7 @@ body:has(.link-home > .active) .icon-home{
 }
 /* *Icon home */
 
-/* *===============> Tilte Sections */
+
 nav{
   background-color: #00000091;
 }
@@ -113,9 +116,8 @@ nav{
   background-color: transparent;
 }
 
-
-
 /* ~ >=============> NavBar */
+
 .header{
   min-height: 100vh;
   background-image: linear-gradient(#00000089,
@@ -124,7 +126,9 @@ nav{
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* ! <=============> Animation typing */
+
 .job-person span{
   /* font-family: "Space Mono", monospace; */
   font-family: monospace;
@@ -198,11 +202,11 @@ nav{
   }
 }
 @keyframes opacit{
-  12.5%, 37.5%, 62.5%, 87.5%{
+  0%, 12.4%, 25%, 37.4%, 50%, 62.4%, 75%, 87.4% , 100%{
     opacity: 1;
   }
 
-  12.6%, 37.4%, 62.4%, 87.4%{
+  12.5%, 37.5%, 62.5%, 87.5%{
     opacity: 0;
   }
 }
@@ -210,6 +214,7 @@ nav{
 /* ! <=============> Animation typing */
 
 /* ? >=============> Header */
+
 .range-skill{
   height: 12px;
 }
@@ -237,7 +242,9 @@ nav{
 .card-services:hover .bi{
   color: #fff;
 }
+
 /* ^ >=============> Services  */
+
 .works{
   background-image: linear-gradient(to top , var(--overlay-color) , var(--overlay-color)) , url("/images/counters-bg.jpg");
   background-position: top;
@@ -278,7 +285,6 @@ nav{
 .image-blog-two{
   width: 50px;
   height: 50px;
-
 }
 .hint-image-blog{
   text-wrap: nowrap;
@@ -309,12 +315,19 @@ nav{
   transition: border var(--transition-duration) ;
   border-radius: 0;
   border: 4px solid transparent;
-
-  
 }
 .Send-Message:hover{
   border: 4px solid var(--color-blue-400);
-
+}
+input,
+textarea{
+  border: .2px solid var(--color-gray-600);
+  outline: none;
+  transition: box-shadow var(--transition-duration-two);
+}
+input:focus,
+textarea:focus{
+  box-shadow:0px 0px 0px 4px var(--color-blue-400);
 }
 /* ~ >=============> Contact */
 
