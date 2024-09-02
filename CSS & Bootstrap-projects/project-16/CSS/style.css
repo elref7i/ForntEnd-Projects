@@ -1,0 +1,44 @@
+:root{
+    --color-black:#000;
+}
+.b-black{
+    background-color: var(--color-black);
+}
+/* Global class  */
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top ,#0005 ,#0005) , url("/images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+header a{
+    /* cursor: pointer; */
+    color: var(--color-black);
+    background-color: #fff;
+    border: 1px solid #fff;
+    transition: color .4s , background .4s;
+    padding-block: 10px;
+    padding-inline: 18px;
+}
+header a:focus-within{
+    color: #fff;
+    background-color: var(--color-black);
+}
+/* * header */
+
+main{
+    background-image: url("/images/light_dot.jpg");
+}
+.all-projects .inner{
+    box-shadow:-1px 4px 17px 0px #0005;
+    transition: box-shadow .4s;
+}
+.all-projects .inner:hover{
+    box-shadow: none;
+}
+/* * all-projects */

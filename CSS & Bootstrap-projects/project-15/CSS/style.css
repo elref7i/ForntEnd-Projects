@@ -147,22 +147,22 @@ nav{
   right: 0px;
   top: 50%;
   transform: translateY(-50%);
-  animation : opacit 16S infinite ;
+  animation : opacit 16s infinite ;
 
 }
 .desinger{
-  animation: desinger 16S infinite  steps(9);
+  animation: desinger 16s infinite  steps(9);
 }
 .developer{
-  animation: developer 16S infinite  steps(10) ;
+  animation: developer 16s infinite  steps(10) ;
   
 }
 .freeLancer{
-  animation: freeLancer 16S infinite steps(11) ;
+  animation: freeLancer 16s infinite steps(11) ;
 }
 .Photographer{
   
-  animation: Photographer 16S infinite steps(13) ;
+  animation: Photographer 16s infinite steps(13) ;
 }
 
 @keyframes desinger {

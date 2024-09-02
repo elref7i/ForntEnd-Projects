@@ -1,0 +1,411 @@
+:root{
+    --cb-50:#0000004d;
+    --cb-100:#343434;
+    --cb-200:#1c1c1c;
+    --cb-300: rgba(52, 52, 52, 0.8);
+
+    --cg-50:#fbfbfb;
+    --cg-100:#f4f4f4;
+    --cg-200:#f7f7f7;
+    --cg-300:#748182;
+    --cg-400:#888;
+
+    --fs-first-heading: 1.875rem;
+    --fs-second-heading:3.125rem;
+    --fs-three-heading:2.5rem;
+    --fs-four-heading:1.875rem;
+    --fs-five-heading:1.125rem;
+    --fs-six-heading:.875rem;
+    --fs-seven-heading:.8125rem;
+
+    --f-wight : 900;    
+    --f2-weight:500;
+
+    --ff-monospace:monospace;
+    --font-heading:"Montserrat", sans-serif;
+    --f-global: "Poppins", sans-serif;
+    
+    --trnasition-duration : .4s;
+
+    --width-span-animation: 1.0309rem;
+
+}
+
+.cb-icon{
+    background-color: var(--cb-50);
+}
+.cg-p{
+    color: var(--cg-300);
+}
+.cg-span{
+    color: var(--cg-400);
+}
+.c-heading{
+    color: var(--cb-100);
+}
+
+.bb-button{
+    background-color: var(--cb-300);
+}
+.bb-f7{
+    background-color: var(--cg-200);
+}
+.bb-f4{
+    background-color: var(--cg-100);
+}
+.bb-body{
+    background-color: var(--cb-300);
+}
+.bb-range-progrees{
+    background-color: var(--cb-200);
+}
+.fs-brand{
+    font-size: var(--fs-five-heading);
+}
+.fs-first{
+    font-size: var(--fs-first-heading);
+}
+.fs-second{
+    font-size: var(--fs-second-heading);
+}
+.fs-three{
+    font-size: var(--fs-three-heading);
+}
+.fs-four{
+    font-size: var(--fs-four-heading);
+}
+.fs-five{
+    font-size: var(--fs-five-heading);
+}
+.fs-six{
+    font-size: var(--fs-six-heading);
+}
+.fs-seven{
+    font-size: var(--fs-seven-heading);
+}
+.w-fit{
+    width: fit-content;
+}
+.fw-900 {
+    font-weight: var(--f-wight);
+}
+.fw-500 {
+    font-weight: var(--f2-weight);
+}
+.isolate{
+    isolation: isolate;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-block: 50.5px;
+}
+
+body{
+    font-family: var(--f-global);
+}
+h1{
+    font-family: var(--ff-monospace);
+}
+h2, h3, h4, h5, h6, .navbar-brand{
+    font-family: var(--font-heading);
+}
+ul{
+    list-style: none;
+}
+a{
+    cursor: pointer;
+}
+.title h2{
+    isolation: isolate;
+}
+.title h2::after{
+    content: "";
+    position: absolute;
+    background-image: url("/images/dots.png");
+    width: 100%;
+    height: 35px;
+    z-index: -1111;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    font-weight: var(--f-wight);
+}
+/* ! Global Class */
+
+header{
+    background-image: linear-gradient(to top , #0009,#0009),url("/images/bg.jpg");
+    background-size: cover;
+    background-position: top top  ;
+}
+.nav-link,
+.navbar-brand,
+.icon-bar
+{
+    color: #fff;
+}
+.icon-social{
+    width: 38px;
+    height: 38px;
+    padding: 10px;
+    background-color: var(--cb-50);
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+}
+.nav-link{
+    overflow: hidden;
+}
+.navbar-nav .nav-link:hover{
+    color: #fff;
+}
+.nav-pills .active::after{
+    background-color: var(--cb-100);
+    width:100%;
+    bottom: -3px;
+}
+.navbar .active::after{
+    background-color: #fff;
+    width:100%;
+    bottom: 0;
+}
+.navbar .active::after,
+.nav-pills .active::after{
+    content: "";
+    position: absolute;
+    height: 2.5px;
+    left: 0;
+    animation: active 1s ;
+}
+
+h1 span:first-child{
+    font-family: var(--font-heading);
+}
+/* ^ Typing Animation */
+.span-animation{
+    overflow: hidden;
+    position: relative;
+
+}
+.span-animation::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    width: 2px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: table-cell;
+}
+.larry-daniels{
+    animation:larry-daniels 6s infinite;
+}
+.developer{
+    animation:developer 6s infinite;
+}
+.designer{
+    animation:designer 6s infinite;
+}
+@keyframes larry-daniels {
+    0%,33.33%,66.66%,100%{
+        width: 0;
+    }
+    16.665%,25.665%{
+        width: calc(var(--width-span-animation) * 13.5);
+    }
+
+}
+@keyframes developer {
+    0%,33.33%,66.67%,100%{
+        width: 0;
+    }
+    49.995%,58.995%{
+        width: calc(var(--width-span-animation) * 9.5);
+    }
+}
+@keyframes designer {
+    0%,33.33%,66.67%,100%{
+        width: 0;
+    }
+    83.325%,92.325%{
+        width: calc(var(--width-span-animation) * 8.5);
+    }
+}
+/* ^ Typing Animation */
+
+@keyframes active {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+header:has(.active-dark .active) .navbar,
+header:has(.active-dark .active) .nav-link,
+header:has(.active-dark .active) .navbar-brand,
+header:has(.active-dark .active) .icon-bar{
+    background-color: #fff;
+    color: var(--cb-100);
+}
+header:has(.active-dark .active) .active::after{
+    background-color: var(--cb-100);
+}
+/*  * Header */
+.image-person{
+    position: relative;
+}
+.image-person::before{
+    content: "";
+    position: absolute;
+    background-image: url("/images/dots.png");
+    width: 70%;
+    height: 70%;
+    left: 0;
+    bottom: 0;
+    z-index: -111;
+}
+.image-person img{
+    padding-left: 25px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.progress{
+    height: 25px;
+    box-shadow: inset 0px 0px 6px 0px #74818277
+}
+.btn-dark:hover{
+    background-color: #fff;
+    color: var(--cb-100);
+}
+/*  ^ About */
+.icon{
+    width: 65px;
+    height: 65px;
+    background-color: var(--cg-100);
+    transition: background  var(--trnasition-duration);
+}
+.icon-hover:hover .icon{
+    color: #fff;
+    background-color: var(--cb-100);
+}
+/*  & Services */
+.project-about{
+    top: 52%;
+    transition: opacity .6s, top .6s;
+
+}
+.trans-top-project{
+    translate: 0px -20px;
+    transition: translate .4s;
+}
+.trans-bottom-project{
+    translate: 0px 20px;
+    transition: translate .4s;
+}
+.project-about,
+.social-person-team{
+    width: 95%;
+    height: 95%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: #fff;
+    opacity: 0;
+}
+.icon-project,
+.icon-profile
+{
+    width: 30px;
+    height: 30px;
+    border: .2px solid var(--cb-100);
+    background-color: var(--cb-100);
+    transition: background  var(--trnasition-duration);
+
+}
+.icon-project a,
+.icon-profile a
+{
+    color: #fff;
+    transition: color  var(--trnasition-duration);
+
+}
+.icon-project:hover a,
+.icon-profile:hover a
+{
+    color: var(--cb-100);
+}
+.icon-project:hover,
+.icon-profile:hover
+{
+    background-color: #fff;
+}
+.all-project .inner:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+.all-project .inner:hover .project-about
+{
+    opacity: 1;
+    top:50%;
+}
+.all-project .inner:hover .trans-top-project,
+.all-project .inner:hover .trans-bottom-project{
+    translate: 0px 0px;
+}
+/*  ^ Portfolio */
+
+.image-testimonials{
+    width: 80px;
+    height: 80px;
+
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    margin-right: 10px;
+    
+}
+.carousel-item{
+    cursor: pointer;
+}
+/*  ~ testimonials */
+.social-person-team
+{
+    top: 50%;
+    transform: rotateY(180deg)  scale(.5);
+    opacity: 0;
+    transition: transform 1s , opacity 1.1s;
+}
+
+
+.all-team .card:hover .social-person-team{
+    opacity: 1;
+    transform: rotateY(360deg) scale(1);
+
+}
+.image-person-team img{
+    transition: scale var(--trnasition-duration) ;
+}
+.image-peson-team:hover img{
+    scale: 1.2;
+} 
+/*  ? our-team */
+textarea{
+    height: 120px;
+    resize:both ;
+}
+textarea:focus-visible,
+input:focus-visible{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+/*  ? Contact-Us */
+
